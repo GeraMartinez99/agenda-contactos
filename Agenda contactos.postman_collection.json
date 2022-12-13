@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "1652bac5-a4eb-40e1-8034-9c74f816aa1c",
+		"name": "Agenda contactos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14365102"
+	},
+	"item": [
+		{
+			"name": "Listar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/contactos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contactos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtrar por correo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/contactos/correo?correo=juan@iteso.mx",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contactos",
+						"correo"
+					],
+					"query": [
+						{
+							"key": "correo",
+							"value": "juan@iteso.mx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtrar por nombre",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener por id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear contacto",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6398b9720e07de30a347a414\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/contactos/eliminar",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contactos",
+						"eliminar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
